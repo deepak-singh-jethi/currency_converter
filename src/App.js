@@ -45,7 +45,8 @@ function App() {
       <button
         className="bg-blue-500 text-stone-50 px-4 py-3 w-full hover:text-stone-700  hover:bg-yellow-300 rounded-lg"
         onClick={handleCalculate}>
-        Convert from USD to INR
+        Convert from {currency1.name.toUpperCase()} to{" "}
+        {currency2.name.toUpperCase()}
       </button>
 
       {error && <p className="text-red-600 text-2xl">{error}</p>}
