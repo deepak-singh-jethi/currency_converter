@@ -26,6 +26,7 @@ function Input({ currency, title, setCurrency }) {
           value={value}
           onChange={(e) => setCurrency({ ...currency, value: e.target.value })}
           disabled={title === "To"}
+          required
         />
       </div>
     </div>
